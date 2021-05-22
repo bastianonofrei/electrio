@@ -1,0 +1,250 @@
+.backgroundNav {
+    
+
+    
+    background: #3A1C71;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;
+    font-family:  monospace;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.678);
+    transition: 1.5s;
+    letter-spacing: 1px;
+
+}
+.backgroundNav:hover{
+    transition: 2.5s;
+    letter-spacing: 3px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.534);
+}
+
+.bgr2{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    transition: 2.5s;
+   
+}
+
+
+.jumbotron1 {
+    min-height: 140px;
+    max-height: 150px;
+    padding: 25px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    border: 10px solid transparent;
+    border-radius: 50%;
+    margin-top: 15px;
+    object-fit: cover;
+}
+
+.Footer{
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  min-height: 80px;
+  max-height: 80px;
+  width: 100%;
+  color: black;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  transition: 2.5s;
+  box-shadow: 0 0 20px purple;
+}
+
+.Footer:hover{
+    letter-spacing: 1px;
+    transition: 2.5s;
+    box-shadow: 60px 0 20px rgb(20, 4, 22);
+    
+}
+
+
+.cardCustomColor1 {
+   
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+transition: 0.5s;
+   
+}
+
+.cardCustomColor2 {
+
+    
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    transition: 0.5s;
+}
+
+.cardCustomColor3 {
+
+    background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 50% , rgba(131,58,180,1) 100%);
+    transition: 0.5s;
+}
+
+.cardCustomColor1:hover {
+   
+    box-shadow: 0 0 40px rgb(255, 115, 0);
+    transition: 2.5s;
+}
+.cardCustomColor2:hover {
+    
+  
+    box-shadow: 0 0 40px rgb(105, 13, 211);
+    transition: 2.5s;
+}
+
+.cardCustomColor3:hover {
+   
+    box-shadow: 0 0 40px rgb(187, 10, 10);
+    transition: 2.5s;
+}
+
+
+
+
+
+.buttonBlack{
+    background: black;
+    color: white;
+}
+
+.card {
+    font-family: 'Comfortaa', cursive;
+    box-shadow: 0 0 20px black;
+    transition: 0.5s;
+
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%);
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px black;
+   border-radius: 100px;
+   display: block;
+  
+   
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+   letter-spacing: 2px;
+ }
+
+
+ .popup{
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%) scale(0);
+     transition: 200ms ease-in-out;
+     border: 1px solid black;
+     border-radius: 10px;
+     z-index: 10;
+     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+     font-family: monospace;
+     font-size: 20px;
+     width: 700px;
+     max-width: 80%;
+
+ }
+
+ .popup.active {
+    transform: translate(-50%,-50%) scale(1);
+ }
+
+ .popup-header{
+     padding: 10px 15px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: 1px solid black;
+ }
+
+ .popup-header .title {
+     font-size: 1.25rem;
+     font-weight: bold;
+ }
+
+ .popup-header .close-button {
+     cursor: pointer;
+     border: none;
+     outline : none;
+     background:none;
+     font-size: 1.25rem;
+     font-weight: bold;
+ }
+
+ .popup-body {
+     padding:10px 15px; 
+     font-family: 'Comfortaa', cursive;
+ }
+
+ #overlay {
+    position:fixed;
+    transition: 200ms ease-in-out;
+    opacity: 0 ;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+ }
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+
+.webheaderCalc {
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    
+}
+
+.footerCalc {
+  
+position: fixed;
+left: 0;
+bottom: 0;
+min-height: 80px;
+max-height: 80px;
+width: 100%;
+color: black;
+font-family: monospace;
+font-size: 20px;
+text-align: center;
+background-color: #F4D03F;
+background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+transition: 2.5s;
+box-shadow: 0 0 20px rgb(226, 162, 22);
+
+}
+
+.footerCalc:hover{
+    letter-spacing: 1px;
+    transition: 2.5s;
+    box-shadow: 60px 0 20px rgb(20, 4, 22);
+    
+}
+
+
+#chartCurrentVoltage {
+    height: 250px;
+}
+
+#chartPower {
+    height: 250px;
+}

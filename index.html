@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <title>Electrio Power Calculator</title>
+</head>
+
+<body>
+    <div class=" container-fluid backgroundNav" id="sus">
+        <img src="resizedElectrio.png" class="img-fluid" style="width: 200px; height: 180px;" alt="">
+    </div>
+
+    <!-- Body contents aici-->
+
+    <div class="container-fluid my-5">
+        <div class="row ">
+            <div class="card mx-3 col  my-5  cardCustomColor1 text-white" style="width: 18rem;" id="card1">
+                <img src="https://www.nexans.com/.imaging/mte/nexans-theme/1150x713/dam/nexans-com/blogs/nexans_blog/Energy/insight-the-future-is-electric-cover-1150x711.jpg/jcr:content/insight-the-future-is-electric-cover-1150x711.jpg"
+                    class="card-img-top img-fluid py-1" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Current and Voltage</h5>
+                    <p class="card-text">Click on the button to display some info about current and voltage.</p>
+                    <a href="#" class="btn btn-grad" data-modal-target=" #popupcurent"> See
+                        more</a>
+                </div>
+            </div>
+            <div class="card mx-3 col my-5  cardCustomColor2 text-white" style="width: 18rem;" id="card2">
+                <img src="resizedSignal.png" class="card-img-top py-1 " alt="...">
+                <div class="card-body ">
+                    <h5 class="card-title">Power Calculator</h5>
+                    <p class="card-text">Click on the button below to calculate the Electrical Power using the current
+                        and voltage signals </p>
+                    <a href="calculator.html" class="btn btn-grad"> Start</a>
+                </div>
+            </div>
+            <div class="card mx-3 col  my-5 cardCustomColor3 text-white" style="width: 18rem;" id="card3">
+                <img src="https://image.freepik.com/free-vector/electric-ball-with-light-effect_52683-29905.jpg"
+                    class="card-img-top img-fluid py-1" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Irregular Periodic Sampling of Signals</h5>
+                    <p class="card-text">Click on the button below to find more about the Irregular Periodic Sampling of
+                        Signals</p>
+                    <a href="#" class="btn btn-grad" data-modal-target=" #popupsemnale"> See
+                        more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Aici facem un Modal pe care il vom folosi pentru popupuri -->
+    <div class="popup " id="popupcurent">
+        <div class="popup-header">
+            <div class="title"> <u>Voltage & Current</u></div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="popup-body">
+            <b><u> Voltage</u>, ( V ) </b> is the potential energy of an electrical supply stored in the form of an
+            electrical charge.
+            Voltage can be thought of as the force that pushes electrons through a conductor and the greater the voltage
+            the greater is its ability to “push” the electrons through a given circuit. As energy has the ability to do
+            work this potential energy can be described as the work required in joules to move electrons in the form of
+            an electrical current around a circuit from one point or node to another.
+            <br>
+            <hr>
+            <b><u> Electrical Current </u>, ( I ) </b>is the movement or flow of electrical charge and is measured in
+            Amperes,
+            symbol i,
+            for intensity). It is the continuous and uniform flow (called a drift) of electrons (the negative particles
+            of an atom) around a circuit that are being “pushed” by the voltage source. In reality, electrons flow from
+            the negative (–ve) terminal to the positive (+ve) terminal of the supply and for ease of circuit
+            understanding conventional current flow assumes that the current flows from the positive to the negative
+            terminal.
+
+            <a href="https://www.electronics-tutorials.ws/dccircuits/dcp_1.html">To find more about it , please click
+                this link </a>
+        </div>
+    </div>
+
+    <div class="popup " id="popupsemnale">
+        <div class="popup-header">
+            <div class="title"><u>Irregular Periodic Sampling of Signals</u></div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="popup-body">
+            In signal processing, sampling is the reduction of a continuous-time signal to a discrete-time signal. A
+            common example is the conversion of a sound wave (a continuous signal) to a sequence of samples (a
+            discrete-time signal).
+            <br>
+            A sample is a value or set of values at a point in time and/or space. A sampler is a subsystem or operation
+            that extracts samples from a continuous signal. <br>
+            <hr> A theoretical ideal sampler produces samples equivalent
+            to
+            the instantaneous value of the continuous signal at the desired points.
+            <br>
+            The original signal is retrievable from a sequence of samples, up to the Nyquist limit, by passing the
+            sequence of samples through a type of low pass filter called a reconstruction filter.
+            <a href="https://en.wikipedia.org/wiki/Sampling_(signal_processing)">To find out more , click here on the
+                link</a>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+
+    <!-- footer aici -->
+
+    <div class="jumbotron jumbotron-fluid Footer  ">
+        <div class="container">
+            <p class="lead py-2"> Electrio &#169;2020 All rights reserved</p>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
